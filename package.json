@@ -1,0 +1,66 @@
+{
+  "name": "@byspec/xml",
+  "version": "0.1.0",
+  "description": "Spec-anchored XML test cases — XML 1.0, 1.1, Namespaces, and DTD",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./1.0": "./src/1.0/index.js",
+    "./1.1": "./src/1.1/index.js",
+    "./namespaces": "./src/namespaces/index.js",
+    "./dtd": "./src/dtd/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./src/index.d.ts"
+      ],
+      "1.0": [
+        "./src/1.0/index.d.ts"
+      ],
+      "1.1": [
+        "./src/1.1/index.d.ts"
+      ],
+      "namespaces": [
+        "./src/namespaces/index.d.ts"
+      ],
+      "dtd": [
+        "./src/dtd/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "devDependencies": {
+    "jasmine": "^5.0.0"
+  },
+  "scripts": {
+    "test": "jasmine 'spec/**/*.spec.js'"
+  },
+  "keywords": [
+    "test",
+    "xml",
+    "xml1.0",
+    "xml1.1",
+    "namespaces",
+    "dtd",
+    "spec"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/byspec/xml"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Amit Gupta (https://solothought.work/)",
+  "license": "MIT",
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/byspec"
+    }
+  ]
+}
